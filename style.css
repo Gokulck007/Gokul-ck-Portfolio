@@ -512,7 +512,16 @@ footer {
     }
 
     .section {
-        padding: 60px 0;
+        padding: 100px 0 60px 0;
+        /* Increased top padding for header */
+    }
+
+    .hero {
+        padding-top: 140px;
+        /* Extra padding for hero to clear header */
+        padding-bottom: 60px;
+        min-height: auto;
+        /* Allow height to adjust */
     }
 
     .footer-content {
@@ -529,6 +538,24 @@ footer {
     .contact-layout {
         grid-template-columns: 1fr;
         gap: 40px;
+        text-align: center;
+    }
+
+    .contact-layout>div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Center the contact info links */
+    .contact-layout a {
+        justify-content: center;
+        /* Center flex items */
+        width: 100%;
+        max-width: 300px;
+        /* Prevent them from being too wide */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .about-hero-img {
