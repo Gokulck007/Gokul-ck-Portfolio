@@ -20,6 +20,13 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scroll globally */
+    width: 100%;
+}
+
 body {
     font-family: var(--font-main);
     background-color: var(--bg-color);
@@ -123,8 +130,11 @@ nav {
 
 .logo {
     font-size: 1.8rem;
+    line-height: 1.6;
     font-weight: 800;
     color: var(--text-primary);
+    /* Prevent horizontal scroll on mobile */
+    width: 100%;
     letter-spacing: -1.5px;
     font-family: var(--font-main);
     display: flex;
@@ -720,7 +730,8 @@ footer::before {
 /* Small Mobile Devices */
 @media (max-width: 480px) {
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        /* Further reduce for small screens */
     }
 
     .hero-buttons {
@@ -732,7 +743,16 @@ footer::before {
     }
 
     .container {
-        padding: 0 15px;
+        padding: 0 20px;
+        width: 100%;
+        /* Ensure container doesn't overflow */
+        box-sizing: border-box;
+    }
+
+    .hero-img {
+        max-width: 80%;
+        /* Prevent image from being too large */
+        height: auto;
     }
 
     .trusted-logos {
