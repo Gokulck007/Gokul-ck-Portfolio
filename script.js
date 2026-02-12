@@ -30,20 +30,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Scroll Animations
-    const fadeElements = document.querySelectorAll('.card, .project-card, .hero-text, .hero-img, .step-card, .card-glass');
+    // Standardized Scroll Animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('active');
+                entry.target.classList.add('visible'); // For footer
+                observer.unobserve(entry.target); // Only animate once
             }
         });
-    }, { threshold: 0.1 });
+    }, observerOptions);
 
-    fadeElements.forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    // Target elements
+    const revealElements = document.querySelectorAll('.card, .project-card, .hero-text, .hero-img, .step-card, .card-glass, .footer-content, .reveal');
+
+    revealElements.forEach(el => {
+        el.classList.add('reveal');
         observer.observe(el);
     });
 
