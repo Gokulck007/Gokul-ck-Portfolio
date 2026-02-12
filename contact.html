@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Gokul C K - Start your web design project today.">
+    <title>Contact — Gokul C K</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Gokul <span>C K.</span></a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Work</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;"
+                class="contact-grid">
+                <div>
+                    <h2>Let's Build Something.</h2>
+                    <p>I'm currently accepting new projects. Whether you have a clear idea or just need some advice, I'm
+                        here to help.</p>
+
+                    <div style="margin-top: 30px; margin-bottom: 50px;">
+                        <a href="mailto:gokulck2017@gmail.com"
+                            style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px; color: var(--text-primary);">
+                            <div
+                                style="width: 40px; height: 40px; background: rgba(37, 99, 235, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color);">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: var(--text-secondary);">Email Me</div>
+                                <div style="font-weight: 500;">gokulck2017@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://in.linkedin.com/in/gokul-c-k" target="_blank"
+                            style="display: flex; align-items: center; gap: 15px; color: var(--text-primary); margin-bottom: 20px;">
+                            <div
+                                style="width: 40px; height: 40px; background: rgba(37, 99, 235, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color);">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: var(--text-secondary);">Connect on LinkedIn</div>
+                                <div style="font-weight: 500;">Gokul C K</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/" target="_blank"
+                            style="display: flex; align-items: center; gap: 15px; color: var(--text-primary);">
+                            <div
+                                style="width: 40px; height: 40px; background: rgba(37, 99, 235, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color);">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: var(--text-secondary);">Check out my Code</div>
+                                <div style="font-weight: 500;">GitHub</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <form id="contact-form" action="#" method="POST">
+                        <h3 style="margin-bottom: 20px;">Send a Message</h3>
+                        <div style="margin-bottom: 20px;">
+                            <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500;">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe"
+                                style="width: 100%; padding: 12px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; color: #fff;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="email"
+                                style="display: block; margin-bottom: 8px; font-weight: 500;">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com"
+                                style="width: 100%; padding: 12px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; color: #fff;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="message"
+                                style="display: block; margin-bottom: 8px; font-weight: 500;">Message</label>
+                            <textarea id="message" name="message" required placeholder="Tell me about your project..."
+                                style="width: 100%; min-height: 120px; padding: 12px; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; color: #fff;"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%; justify-content: center;">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h3 style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question">What type of websites do you build? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            I build simple, clean websites that can be either static or dynamic, depending on the
+                            requirement. The focus is always on usability, clarity, and performance rather than
+                            unnecessary features.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the difference between a static and a dynamic website? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            A static website shows fixed content and is suitable for portfolios, basic business sites,
+                            and informational pages.<br><br>
+                            A dynamic website allows content to be updated easily and supports features like contact
+                            forms, blogs, dashboards, or admin panels.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you work with WordPress? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            Yes. I work with WordPress for dynamic websites where clients need easy content management,
+                            scalability, and flexibility. I focus on clean structure, performance, and SEO-friendly
+                            setup.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Are your websites SEO-friendly? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            Yes. I follow basic SEO best practices such as proper page structure, clean URLs,
+                            mobile-friendly design, optimized content layout, and fast loading pages.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you build static websites also? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            Yes. Static websites are ideal for portfolios, landing pages, and small business sites where
+                            content does not change frequently. They are fast, secure, and simple to maintain.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you use AI in website creation? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            Yes, I use AI tools as support, mainly for content structuring, design ideas, and
+                            productivity. All final decisions, structure, and implementation are handled manually to
+                            ensure quality and accuracy.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Is AI used to build the entire website? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            No. AI is used only as an assistance tool, not as a replacement for proper planning, design,
+                            and development. The website structure and logic are always reviewed and refined manually.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Can you combine AI with WordPress? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            Yes. AI can be used alongside WordPress for tasks like content drafting, optimization
+                            suggestions, and workflow efficiency, while WordPress handles the core website management.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Which is better: static or dynamic website? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            There is no single “better” option.<br>
+                            • Static websites are best for speed and simplicity.<br>
+                            • Dynamic websites are better when regular updates or content management is needed.<br>
+                            The choice depends on the project goals.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you provide maintenance or updates? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            For dynamic websites like WordPress, I can assist with basic updates and improvements.
+                            Static websites usually require minimal maintenance.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Are these websites suitable for future upgrades? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            Yes. All websites are built with a clean structure, making it easy to add features or
+                            convert from static to dynamic later if required.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you build websites for learning, practice, or real use? <i
+                            class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <div class="faq-content">
+                            My portfolio includes experience-based, practice, and professional projects. Each project is
+                            clearly represented to demonstrate skills, not to make false claims.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>Gokul C K.</h2>
+                </div>
+                <div class="footer-contact">
+                    <a href="mailto:gokulck2017@gmail.com">gokulck2017@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://in.linkedin.com/in/gokul-c-k" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/gokul_c.k" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div style="margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--border-color);">
+                <p>&copy; 2026 Gokul C K. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
