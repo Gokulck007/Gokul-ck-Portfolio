@@ -592,6 +592,8 @@ footer::before {
         width: 100%;
         /* Ensure container doesn't overflow */
         max-width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .hero-img {
