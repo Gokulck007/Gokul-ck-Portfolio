@@ -95,6 +95,13 @@ p {
     padding: 120px 0;
 }
 
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
 /* Header & Navigation */
 header {
     background-color: rgba(5, 5, 5, 0.8);
@@ -325,6 +332,10 @@ nav {
     filter: grayscale(0%);
 }
 
+.about-hero-img {
+    height: 600px;
+}
+
 
 /* Services Grid */
 .services-grid {
@@ -499,6 +510,40 @@ footer {
     .nav-links.active {
         display: flex;
     }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-brand h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-hero-img {
+        height: 400px;
+    }
+
+    .track-record-grid .card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.track-record-grid {
+    display: grid;
+    gap: 40px;
 }
 
 /* FAQ Dropdown Styles */
