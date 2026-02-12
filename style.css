@@ -449,6 +449,61 @@ footer {
     color: var(--bg-color);
 }
 
+
+/* Homepage Specifics */
+.hero-tag {
+    color: var(--accent-color);
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 500px;
+    margin-bottom: 40px;
+    color: var(--text-secondary);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.trusted-section {
+    border-top: 1px solid var(--border-color);
+    padding: 60px 0;
+}
+
+.trusted-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.trusted-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0.5;
+}
+
+.trusted-logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.intro-link {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+    border-bottom: 1px solid var(--text-primary);
+}
+
 /* Responsive */
 @media (max-width: 968px) {
     .hero-layout {
@@ -556,6 +611,44 @@ footer {
         /* Prevent them from being too wide */
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .contact-layout>div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Center the contact info links */
+    .contact-layout a {
+        justify-content: center;
+        /* Center flex items */
+        width: 100%;
+        max-width: 300px;
+        /* Prevent them from being too wide */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Hero Buttons Mobile */
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Trusted Logos Mobile */
+    .trusted-logos {
+        gap: 20px;
+    }
+
+    .trusted-logo {
+        font-size: 1rem;
     }
 
     .about-hero-img {
