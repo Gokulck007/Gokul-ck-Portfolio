@@ -597,7 +597,12 @@ footer::before {
     }
 
     .hero-img {
-        height: 400px;
+        width: auto;
+        max-width: 85%;
+        /* Restrict width to allow centering */
+        height: auto;
+        max-height: 400px;
+        margin: 0 auto;
     }
 
     .hero-stats {
@@ -727,7 +732,8 @@ footer::before {
     }
 
     .about-hero-img {
-        height: 400px;
+        height: auto;
+        max-height: 400px;
     }
 
     .track-record-grid .card {
