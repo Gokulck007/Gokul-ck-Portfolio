@@ -47,6 +47,9 @@ body {
     background-size: 50px 50px, 50px 50px, 100% 100%, 100% 100%, 100% 100%;
     background-attachment: fixed;
     width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 a {
@@ -93,8 +96,12 @@ p {
     color: var(--text-secondary);
     margin-bottom: 1.6rem;
     font-size: 1.1rem;
-    line-height: 1.8; /* Premium long-form readability */
-    max-width: 75ch; /* Prevent lines from getting too long */
+    line-height: 1.8;
+    max-width: 75ch;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    text-wrap: pretty; /* Prevents orphans and improves rag */
 }
 
 /* Layout Utilities */
@@ -626,7 +633,11 @@ footer::before {
 
     h1 {
         font-size: 2.5rem;
-        /* Smaller font size for mobile */
+    }
+
+    p {
+        text-align: left;
+        hyphens: none;
     }
 
     h2 {
