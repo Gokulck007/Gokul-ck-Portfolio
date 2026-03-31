@@ -343,6 +343,7 @@ nav {
 
 .about-hero-img {
     height: 500px;
+    object-position: center top; /* Shift focus up to prevent head-cropping */
 }
 
 
