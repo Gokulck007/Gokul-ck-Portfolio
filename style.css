@@ -132,11 +132,8 @@ nav {
 
 .logo {
     font-size: 1.8rem;
-    line-height: 1.6;
     font-weight: 800;
     color: var(--text-primary);
-    /* Prevent horizontal scroll on mobile */
-    width: 100%;
     letter-spacing: -1.5px;
     font-family: var(--font-main);
     display: flex;
@@ -618,7 +615,8 @@ footer::before {
     }
 
     .portfolio-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
     }
 
     h1 {
@@ -632,6 +630,7 @@ footer::before {
 
     nav {
         height: 70px;
+        justify-content: space-between;
     }
 
     .hamburger {
