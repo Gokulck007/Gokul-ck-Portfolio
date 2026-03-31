@@ -33,10 +33,11 @@ body {
     font-family: var(--font-main);
     background-color: var(--bg-color);
     color: var(--text-primary);
-    line-height: 1.6;
+    line-height: 1.7;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    letter-spacing: -0.1px;
     background-image:
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
@@ -45,6 +46,7 @@ body {
         radial-gradient(circle at 0% 100%, rgba(37, 99, 235, 0.05), transparent 40%);
     background-size: 50px 50px, 50px 50px, 100% 100%, 100% 100%, 100% 100%;
     background-attachment: fixed;
+    width: 100%;
 }
 
 a {
@@ -68,9 +70,10 @@ h2,
 h3,
 h4 {
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.25; /* Slightly more space */
     margin-bottom: 1rem;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.03em; /* Tighter premium headlines */
+    text-wrap: balance;
 }
 
 h1 {
@@ -88,8 +91,10 @@ h2 {
 
 p {
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
-    font-size: 1.125rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.1rem;
+    line-height: 1.8; /* Premium long-form readability */
+    max-width: 75ch; /* Prevent lines from getting too long */
 }
 
 /* Layout Utilities */
@@ -976,6 +981,14 @@ footer::before {
     top: 10px;
     right: 20px;
     line-height: 1;
+}
+
+.hero-text p {
+    max-width: 650px; /* Keep line length optimal for readability */
+}
+
+.hero-text h1 {
+    text-wrap: balance; /* Modern premium headline wrapping */
 }
 
 .step-icon {
