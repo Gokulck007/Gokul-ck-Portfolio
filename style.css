@@ -788,6 +788,40 @@ footer::before {
     gap: 40px;
 }
 
+.experience-card {
+    padding: 30px !important;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.experience-year {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    font-weight: 700;
+    min-width: 130px;
+    text-align: center;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.experience-content {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-year {
+        width: 100%;
+        min-width: unset;
+    }
+}
+
 /* FAQ Dropdown Styles */
 .faq-section {
     max-width: 800px;
