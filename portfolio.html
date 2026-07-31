@@ -4,13 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Gokul C K - Selected Website Projects & Experience.">
+    <meta name="description" content="View the web design and development portfolio of Gokul C K. Featuring premium digital projects and innovative web solutions.">
+    <meta name="keywords" content="Web Developer Portfolio, Digital Projects, Premium Web Design, Frontend Development Work, Gokul C K Projects">
+    <link rel="canonical" href="https://gokulck.in/portfolio.html">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Portfolio — Gokul C K">
+    <meta property="og:description" content="View the web design and development portfolio of Gokul C K. Featuring premium digital projects and innovative web solutions.">
+    <meta property="og:url" content="https://gokulck.in/portfolio.html">
+    <meta property="og:type" content="website">
+    
+    <!-- JSON-LD Schema for AI & Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Gokul C K Web Development Portfolio",
+      "url": "https://gokulck.in/portfolio.html",
+      "creator": {
+        "@type": "Person",
+        "name": "Gokul C K"
+      }
+    }
+    </script>
+    
     <title>Portfolio — Gokul C K</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Vanta.js WebGL Background -->
+    <div id="vanta-bg"></div>
+
     <header>
         <div class="container">
             <nav>
@@ -42,6 +68,25 @@
             </div>
 
             <div class="portfolio-grid">
+                <!-- Aknez Bridge Trade -->
+                <div class="card project-card">
+                    <div class="project-img">
+                        <img src="images/aknez.jpg" alt="Aknez Bridge Trade"
+                            onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-globe\'></i>'">
+                    </div>
+                    <div class="project-content">
+                        <h3>Aknez Bridge Trade</h3>
+                        <p style="font-size: 0.9rem;">Business website focusing on global trade and premium services.</p>
+                        <div class="project-tags">
+                            <span class="tag">Business</span>
+                            <span class="tag">Trade</span>
+                        </div>
+                        <div class="project-link" style="margin-top: 20px;">
+                            <a href="https://aknezbridgetrade.com/" target="_blank" class="btn btn-secondary" style="padding: 8px 15px; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 8px; width: 100%; justify-content: center; border-radius: 6px;"><i class="fas fa-external-link-alt"></i> Live Preview</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Digital Agency -->
                 <div class="card project-card">
                     <div class="project-img">
@@ -299,6 +344,10 @@
         </div>
     </footer>
 
+    <!-- Three.js and Vanta.js for WebGL Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    
     <script src="script.js"></script>
 </body>
 

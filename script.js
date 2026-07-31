@@ -74,4 +74,39 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = mailtoLink;
         });
     }
+
+    // Initialize Vanta.js 3D Waves Background
+    if (typeof window.VANTA !== 'undefined') {
+        window.VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x050505,
+            shininess: 65.00,
+            waveHeight: 18.00,
+            waveSpeed: 0.40,
+            zoom: 0.85
+        });
+    }
+    // Permanent Ambient Glow for Top Menu Pill
+    const headerGlow = document.createElement('div');
+    headerGlow.classList.add('header-glow');
+    document.body.appendChild(headerGlow);
+
+    // Dynamic Luxury Aura for Liquid Glass Refraction
+    const luxuryAura = document.createElement('div');
+    luxuryAura.classList.add('luxury-aura');
+    document.body.appendChild(luxuryAura);
+
+    if (window.innerWidth > 768) {
+        document.addEventListener('mousemove', (e) => {
+            luxuryAura.style.left = `${e.clientX}px`;
+            luxuryAura.style.top = `${e.clientY}px`;
+        });
+    }
 });
